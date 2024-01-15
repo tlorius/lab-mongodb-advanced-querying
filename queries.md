@@ -33,7 +33,7 @@ Project: {name: 1, ipo: 1, \_id: 0}
 
 <!-- Your Code Goes Here -->
 
-Filter: {$and: [{number_of_employees: {$lte: 1000}},{founded_year: {$lte: 2005}}]}
+Filter: {$and: [{number_of_employees: {$lt: 1000}},{founded_year: {$lt: 2005}}]}
 Project: {number_of_employees: -1}
 
 ### 6. All the companies that don't include the `partners` field.
